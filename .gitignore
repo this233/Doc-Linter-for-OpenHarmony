@@ -1,0 +1,8 @@
+docs/
+env/
+__pycache__
+
+*.zip
+results_RAG/intermediate_results
+zh-cn-bad
+*.faiss

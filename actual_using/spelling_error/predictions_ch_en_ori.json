@@ -1,0 +1,464 @@
+[
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 6,
+    "problematic_sentence": "无论FA模型还是Stage模型，数据读写功能都包含客户端和服务断两部分。",
+    "reason": "'服务断'应为'服务端'，'断'是错别字",
+    "fixed_sentence": "无论FA模型还是Stage模型，数据读写功能都包含客户端和服务端两部分。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 8,
+    "problematic_sentence": "FA模型中，客户端是由[DataAbilityHelper](../reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md)提供对歪接口，服务端是由[DataAbility](dataability-overview.md)提供数据库的读写服雾。",
+    "reason": "'对歪'应为'对外'，'歪'是错别字；'服雾'应为'服务'，'雾'是错别字",
+    "fixed_sentence": "FA模型中，客户端是由[DataAbilityHelper](../reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md)提供对外接口，服务端是由[DataAbility](dataability-overview.md)提供数据库的读写服务。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 10,
+    "problematic_sentence": "Stage模型中，客户端是由[DataShareHelper](../reference/apis-arkdata/js-apis-data-dataShare-sys.md#datasharehelper)提供对歪接口，服务端是由[DataShareExtensionAbility](../reference/apis-arkdata/js-apis-application-dataShareExtensionAbility-sys.md)提供数据库的读写服雾。",
+    "reason": "'对歪'应为'对外'，'歪'是错别字；'服雾'应为'服务'，'雾'是错别字",
+    "fixed_sentence": "Stage模型中，客户端是由[DataShareHelper](../reference/apis-arkdata/js-apis-data-dataShare-sys.md#datasharehelper)提供对外接口，服务端是由[DataShareExtensionAbility](../reference/apis-arkdata/js-apis-application-dataShareExtensionAbility-sys.md)提供数据库的读写服务。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 12,
+    "problematic_sentence": "服务端由FA模型升级到Stage模型后，会导致FA模型的客户端在API 9(含)之后的版本上无法访问服务断。",
+    "reason": "'服务断'应为'服务端'，'断'是错别字",
+    "fixed_sentence": "服务端由FA模型升级到Stage模型后，会导致FA模型的客户端在API 9(含)之后的版本上无法访问服务端。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 19,
+    "problematic_sentence": "一种兼容方法是DataAbilityHelper根据传入的URI的前缀是DataAbility还是DataShare来决定是否掉DataShareHelper的接口。",
+    "reason": "'掉'应为'调用'，缺少'调'字",
+    "fixed_sentence": "一种兼容方法是DataAbilityHelper根据传入的URI的前缀是DataAbility还是DataShare来决定是否调用DataShareHelper的接口。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 21,
+    "problematic_sentence": "因此DataAbilityHelper不能仅以来URI的前缀决定访问DataAbility还是DataShareExtensionAbility，系统采用的方法是：",
+    "reason": "'以来'应为'依赖'，'以来'是错别字",
+    "fixed_sentence": "因此DataAbilityHelper不能仅依赖URI的前缀决定访问DataAbility还是DataShareExtensionAbility，系统采用的方法是："
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 23,
+    "problematic_sentence": "1. 先按照传入的URI拉起DataAbility；如果拉起失败，再将传入的URI的前缀转换成DataShare再去常识拉起DataShareExtensionAbility。",
+    "reason": "'常识'应为'尝试'，'常'是错别字",
+    "fixed_sentence": "1. 先按照传入的URI拉起DataAbility；如果拉起失败，再将传入的URI的前缀转换成DataShare再去尝试拉起DataShareExtensionAbility。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 25,
+    "problematic_sentence": "2. 如果URI无对应的DataAbility和DataShareExtensionAbility，则拉起失败；反之，必订会拉起DataAbility或者DataShareExtensionAbility。",
+    "reason": "'必订'应为'必定'，'订'是错别字",
+    "fixed_sentence": "2. 如果URI无对应的DataAbility和DataShareExtensionAbility，则拉起失败；反之，必定会拉起DataAbility或者DataShareExtensionAbility。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 30,
+    "problematic_sentence": "1. 由DataAbility切换到DataShareExtensionAbility时，只能修改URI的前坠，不能修改URI的其他部分。![FAvsStage-uri](figures/FAvsStage-uri.png)",
+    "reason": "'前坠'应为'前缀'，'坠'是错别字",
+    "fixed_sentence": "1. 由DataAbility切换到DataShareExtensionAbility时，只能修改URI的前缀，不能修改URI的其他部分。![FAvsStage-uri](figures/FAvsStage-uri.png)"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 32,
+    "problematic_sentence": "2. DataShareHelper并没有实现原DataAbilityHelper对外API接口的所有功能，因此有部分接口是无法兼容的，具提如表1所示。",
+    "reason": "'具提'应为'具体'，'提'是错别字",
+    "fixed_sentence": "2. DataShareHelper并没有实现原DataAbilityHelper对外API接口的所有功能，因此有部分接口是无法兼容的，具体如表1所示。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 34,
+    "problematic_sentence": "     **表1** FA模型访问stage模型DataShareExtensionAbility接口支持请况",
+    "reason": "'请况'应为'情况'，'请'是错别字",
+    "fixed_sentence": "     **表1** FA模型访问stage模型DataShareExtensionAbility接口支持情况"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/access-datashareextensionability-from-fa.md",
+    "line_number": 36,
+    "problematic_sentence": "   | 接口 | DataAbilityHelper是否题供 | DataShareHelper是否提供 | 是否兼荣 | ",
+    "reason": "'题供'应为'提供'，'题'是错别字；'兼荣'应为'兼容'，'荣'是错别字",
+    "fixed_sentence": "   | 接口 | DataAbilityHelper是否提供 | DataShareHelper是否提供 | 是否兼容 | "
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 4,
+    "problematic_sentence": "当在[module.json5](../quick-start/module-configuration-file.md)文件的[skills字段](../quick-start/module-configuration-file.md#skills标签)中声明uris时，主要包含如下自段。",
+    "reason": "'自段'应为'字段'，这是常见的输入错误",
+    "fixed_sentence": "当在[module.json5](../quick-start/module-configuration-file.md)文件的[skills字段](../quick-start/module-configuration-file.md#skills标签)中声明uris时，主要包含如下字段。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 8,
+    "problematic_sentence": "> - 通过浏览器拉起应用页面时，浏览器会将uri中scheme和host中的大写字母自动转化为小写字母，导致无法正却匹配应用。因此建议scheme和host中不要包含大写字毋。",
+    "reason": "'正却'应为'正确'，'字毋'应为'字母'，这是明显的错别字",
+    "fixed_sentence": "> - 通过浏览器拉起应用页面时，浏览器会将uri中scheme和host中的大写字母自动转化为小写字母，导致无法正确匹配应用。因此建议scheme和host中不要包含大写字母。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 9,
+    "problematic_sentence": "> - path、pathStartWith、pathRegex的娶值前后均不需要加斜杠`/`。例如对于应用链接`https://developer.huawei.com/consumer/cn/support`，path字段应配致为`consumer/cn/support`。",
+    "reason": "'娶值'应为'取值'，'配致'应为'配置'，这是常见的同音错误",
+    "fixed_sentence": "> - path、pathStartWith、pathRegex的取值前后均不需要加斜杠`/`。例如对于应用链接`https://developer.huawei.com/consumer/cn/support`，path字段应配置为`consumer/cn/support`。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 11,
+    "problematic_sentence": "- scheme：协议名称。常见的娶值有http、https、file、ftp等，也可以自定义。",
+    "reason": "'娶值'应为'取值'，这是同音错误",
+    "fixed_sentence": "- scheme：协议名称。常见的取值有http、https、file、ftp等，也可以自定义。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 12,
+    "problematic_sentence": "- host：明名或IP地址。例如明名`developer.huawei.com`或IP地址`127.0.0.1`。",
+    "reason": "'明名'应为'域名'，这是明显的错别字",
+    "fixed_sentence": "- host：域名或IP地址。例如域名`developer.huawei.com`或IP地址`127.0.0.1`。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 13,
+    "problematic_sentence": "- port：端扣号。例如`developer.huawei.com:80`后面的80即为端扣号。",
+    "reason": "'端扣号'应为'端口号'，这是常见的输入错误",
+    "fixed_sentence": "- port：端口号。例如`developer.huawei.com:80`后面的80即为端口号。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 14,
+    "problematic_sentence": "- path：路径，表示明名服务器上的目录或文件路径，该自段在scheme存在时才有意义。path字段不支持通配符，如果需要使用通配符，可以采用pathRegex字段。",
+    "reason": "'明名'应为'域名'，'自段'应为'字段'",
+    "fixed_sentence": "- path：路径，表示域名服务器上的目录或文件路径，该字段在scheme存在时才有意义。path字段不支持通配符，如果需要使用通配符，可以采用pathRegex字段。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 17,
+    "problematic_sentence": "- pathStartWith：路径前坠，该自段在scheme存在时才有意义，表示明名服务器上的目录或文件路径的前缀，用于前缀匹配。",
+    "reason": "'前坠'应为'前缀'，'自段'应为'字段'，'明名'应为'域名'",
+    "fixed_sentence": "- pathStartWith：路径前缀，该字段在scheme存在时才有意义，表示域名服务器上的目录或文件路径的前缀，用于前缀匹配。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 18,
+    "problematic_sentence": "- pathRegex：路径正侧，该自段在scheme存在时才有意义，表示明名服务器上的目录或文件路径的正则表达式，用于正则匹配。",
+    "reason": "'正侧'应为'正则'，'自段'应为'字段'，'明名'应为'域名'",
+    "fixed_sentence": "- pathRegex：路径正则，该字段在scheme存在时才有意义，表示域名服务器上的目录或文件路径的正则表达式，用于正则匹配。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 19,
+    "problematic_sentence": "- [linkFeature](#linkfeature标签说明)：应用的功农类型（如文件打开、分享、导航等）。取值为长度不超过127字节的字符串，不支迟中文。",
+    "reason": "'功农'应为'功能'，'支迟'应为'支持'，这是明显的错别字",
+    "fixed_sentence": "- [linkFeature](#linkfeature标签说明)：应用的功能类型（如文件打开、分享、导航等）。取值为长度不超过127字节的字符串，不支持中文。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 23,
+    "problematic_sentence": "按照配致的自段不同，uris可以拼接为不同的URL表达式。其中，scheme为必选自段，其他自段仅当scheme存在时才有意义。",
+    "reason": "'配致'应为'配置'，'自段'应为'字段'",
+    "fixed_sentence": "按照配置的字段不同，uris可以拼接为不同的URL表达式。其中，scheme为必选字段，其他字段仅当scheme存在时才有意义。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 29,
+    "problematic_sentence": "    三方应用组件配致的scheme不能与系统应用重复，否则会导致无法通过该uri拉起三方应用组件。 ",
+    "reason": "'配致'应为'配置'",
+    "fixed_sentence": "    三方应用组件配置的scheme不能与系统应用重复，否则会导致无法通过该uri拉起三方应用组件。 "
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/non_reference/app-uri-config.md",
+    "line_number": 35,
+    "problematic_sentence": "> - 三方应用组件配致的scheme不能与系统应用重复，否则会导致无法通过该uri拉起三方应用组件。 ",
+    "reason": "'配致'应为'配置'",
+    "fixed_sentence": "> - 三方应用组件配置的scheme不能与系统应用重复，否则会导致无法通过该uri拉起三方应用组件。 "
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 3,
+    "problematic_sentence": "OpenGL三棱椎（API10）",
+    "reason": "‘椎’应为‘锥’，‘三棱锥’是几何学术语",
+    "fixed_sentence": "OpenGL三棱锥（API10）"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 14,
+    "problematic_sentence": "一组CameraDevice相机设备，并得到与这一组CamraDevice对应的并发信息",
+    "reason": "‘CamraDevice’拼写错误，应为‘CameraDevice’",
+    "fixed_sentence": "一组CameraDevice相机设备，并得到与这一组CameraDevice对应的并发信息"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 19,
+    "problematic_sentence": "回调函数，用于获取预估的单次拍照底层出sensor采集帧时间",
+    "reason": "‘出sensor’应为‘由sensor’或‘从sensor’，介词使用不当",
+    "fixed_sentence": "回调函数，用于获取预估的单次拍照底层由sensor采集帧时间"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 25,
+    "problematic_sentence": "对焦类，对设备对焦操作。",
+    "reason": "‘对设备对焦操作’表述不通顺，应为‘用于设备对焦操作’",
+    "fixed_sentence": "对焦类，用于设备对焦操作。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 61,
+    "problematic_sentence": "子类不可以声明和父类的方法同名的lamada类型的属性",
+    "reason": "‘lamada’拼写错误，应为‘lambda’",
+    "fixed_sentence": "子类不可以声明和父类的方法同名的lambda类型的属性"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 62,
+    "problematic_sentence": "**规则：**`arkts-no-subclass-lamada-prop-name-same-as-superclass-method`",
+    "reason": "‘lamada’拼写错误，应为‘lambda’",
+    "fixed_sentence": "**规则：**`arkts-no-subclass-lambda-prop-name-same-as-superclass-method`"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 63,
+    "problematic_sentence": "ArkTS1.2中子类不可以声明和父类的方法同名的lamada类型的属性。",
+    "reason": "‘lamada’拼写错误，应为‘lambda’",
+    "fixed_sentence": "ArkTS1.2中子类不可以声明和父类的方法同名的lambda类型的属性。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 8,
+    "problematic_sentence": "## 不支持Funcion.bind方法",
+    "reason": "‘Funcion’拼写错误，应为‘Function’",
+    "fixed_sentence": "## 不支持Function.bind方法"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 54,
+    "problematic_sentence": "## 不支持Funcion.bind方法",
+    "reason": "‘Funcion’拼写错误，应为‘Function’",
+    "fixed_sentence": "## 不支持Function.bind方法"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 74,
+    "problematic_sentence": "## 不支持Funcion.bind方法",
+    "reason": "‘Funcion’拼写错误，应为‘Function’",
+    "fixed_sentence": "## 不支持Function.bind方法"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 58,
+    "problematic_sentence": "默认返回Null，标识该接口是一个代理侧接口。",
+    "reason": "‘Null’应为‘null’，编程语言中通常使用小写",
+    "fixed_sentence": "默认返回null，标识该接口是一个代理侧接口。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 75,
+    "problematic_sentence": "ArkTS1.2中模块加载默认支持懒加载，无法实现导入副作用的功能。",
+    "reason": "技术术语拼写错误，应为'ArkTS 1.2'，版本号与名称间需空格",
+    "fixed_sentence": "ArkTS 1.2中模块加载默认支持懒加载，无法实现导入副作用的功能。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 79,
+    "problematic_sentence": "保存待发送数据的MessageSequence对象。",
+    "reason": "技术术语大小写不规范，应为'messageSequence'",
+    "fixed_sentence": "保存待发送数据的messageSequence对象。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 81,
+    "problematic_sentence": "rpc最长等待时间。默认TF_WAIT_TIME。",
+    "reason": "技术术语大小写不规范，'RPC'应全大写",
+    "fixed_sentence": "RPC最长等待时间。默认TF_WAIT_TIME。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 83,
+    "problematic_sentence": "Operate not permit. Return by callback.",
+    "reason": "英文语法错误，应为'Operation not permitted'",
+    "fixed_sentence": "Operation not permitted. Return by callback."
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 98,
+    "problematic_sentence": "hiappEvent.event.RESOURCE_OVERLIMIT",
+    "reason": "技术术语大小写不规范，应为'HiAppEvent'",
+    "fixed_sentence": "HiAppEvent.event.RESOURCE_OVERLIMIT"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 109,
+    "problematic_sentence": "## 子类不可以声明和父类的方法同名的lamada类型的属性",
+    "reason": "技术术语拼写错误，'lamada'应为'lambda'",
+    "fixed_sentence": "## 子类不可以声明和父类的方法同名的lambda类型的属性"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 110,
+    "problematic_sentence": "**规则：**`arkts-no-subclass-lamada-prop-name-same-as-superclass-method`",
+    "reason": "技术术语拼写错误，'lamada'应为'lambda'",
+    "fixed_sentence": "**规则：**`arkts-no-subclass-lambda-prop-name-same-as-superclass-method`"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 111,
+    "problematic_sentence": "ArkTS1.2中子类不可以声明和父类的方法同名的lamada类型的属性。",
+    "reason": "两处错误：1.版本号格式应为'ArkTS 1.2' 2.'lamada'应为'lambda'",
+    "fixed_sentence": "ArkTS 1.2中子类不可以声明和父类的方法同名的lambda类型的属性。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 112,
+    "problematic_sentence": "主动断开连接。。",
+    "reason": "标点符号重复",
+    "fixed_sentence": "主动断开连接。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 118,
+    "problematic_sentence": "下述两个接口在M114行也会毁掉，只是……",
+    "reason": "'毁掉'应为'回调'，技术术语错误",
+    "fixed_sentence": "下述两个接口在M114行也会回调，只是……"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 119,
+    "problematic_sentence": "ArkWebHttpBodyStream_AsyncRead 支持异步异步数据，常用于性能优化 。",
+    "reason": "重复用词'异步'",
+    "fixed_sentence": "ArkWebHttpBodyStream_AsyncRead 支持异步数据，常用于性能优化。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 120,
+    "problematic_sentence": "| -n | 必选参数。指定新帐号的名字。 |",
+    "reason": "'帐号'应为'账户'，现代汉语规范用词",
+    "fixed_sentence": "| -n | 必选参数。指定新账户的名字。 |"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 121,
+    "problematic_sentence": "| -t | 必选参数。指定新帐号的帐号类型。帐号类型分为admin（管理员帐号）、normal（普通帐号）、guest（访客帐号）、private（隐私帐号）。 |",
+    "reason": "连续5处'帐号'应为'账户'",
+    "fixed_sentence": "| -t | 必选参数。指定新账户的账户类型。账户类型分为admin（管理员账户）、normal（普通账户）、guest（访客账户）、private（隐私账户）。 |"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 122,
+    "problematic_sentence": "| -s | 可选参数。指定新帐号的短名。 |",
+    "reason": "'帐号'应为'账户'",
+    "fixed_sentence": "| -s | 可选参数。指定新账户的短名。 |"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/collect.md",
+    "line_number": 123,
+    "problematic_sentence": "console.error(`audioRender start faild :  Error: ${JSON.stringify(err)}`);",
+    "reason": "'faild'拼写错误，应为'failed'",
+    "fixed_sentence": "console.error(`audioRender start failed :  Error: ${JSON.stringify(err)}`);"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 20,
+    "problematic_sentence": "系统内部错物。",
+    "reason": "\"错物\"应为\"错误\"，属于同音字错误",
+    "fixed_sentence": "系统内部错误。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 24,
+    "problematic_sentence": "连接服雾失败。",
+    "reason": "\"服雾\"应为\"服务\"，属于同音字错误",
+    "fixed_sentence": "连接服务失败。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 28,
+    "problematic_sentence": "检查系统服雾是否运行正常。",
+    "reason": "\"服雾\"应为\"服务\"，属于同音字错误",
+    "fixed_sentence": "检查系统服务是否运行正常。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 38,
+    "problematic_sentence": "广告请求加栽失败。",
+    "reason": "\"加栽\"应为\"加载\"，属于形近字错误",
+    "fixed_sentence": "广告请求加载失败。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 42,
+    "problematic_sentence": "1. 网络连接异长。",
+    "reason": "\"异长\"应为\"异常\"，属于同音字错误",
+    "fixed_sentence": "1. 网络连接异常。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 46,
+    "problematic_sentence": "3. 服务器无合适广告天充。",
+    "reason": "\"天充\"应为\"填充\"，属于同音字错误",
+    "fixed_sentence": "3. 服务器无合适广告填充。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 52,
+    "problematic_sentence": "2. 请根据API参考检查广告请求参数是否符合要球。",
+    "reason": "\"要球\"应为\"要求\"，属于同音字错误",
+    "fixed_sentence": "2. 请根据API参考检查广告请求参数是否符合要求。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 62,
+    "problematic_sentence": "广告展式失败。",
+    "reason": "\"展式\"应为\"展示\"，属于同音字错误",
+    "fixed_sentence": "广告展示失败。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 66,
+    "problematic_sentence": "网络连接异长。",
+    "reason": "\"异长\"应为\"异常\"，属于同音字错误",
+    "fixed_sentence": "网络连接异常。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 80,
+    "problematic_sentence": "广告数据解西失败。",
+    "reason": "\"解西\"应为\"解析\"，属于同音字错误",
+    "fixed_sentence": "广告数据解析失败。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 84,
+    "problematic_sentence": "广告响应数据缺失关键属性或存在结构错物。",
+    "reason": "\"错物\"应为\"错误\"，属于同音字错误",
+    "fixed_sentence": "广告响应数据缺失关键属性或存在结构错误。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 98,
+    "problematic_sentence": "请求广告参数错物。",
+    "reason": "\"错物\"应为\"错误\"，属于同音字错误",
+    "fixed_sentence": "请求广告参数错误。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 102,
+    "problematic_sentence": "媒体在写入请求广告参数，校验异长等。",
+    "reason": "\"异长\"应为\"异常\"，属于同音字错误",
+    "fixed_sentence": "媒体在写入请求广告参数，校验异常等。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 106,
+    "problematic_sentence": "参考开发指导文档检查广告请求参数是否正却。",
+    "reason": "\"正却\"应为\"正确\"，属于同音字错误",
+    "fixed_sentence": "参考开发指导文档检查广告请求参数是否正确。"
+  },
+  {
+    "file": "/root/code/docs_llm/actual_using/error_doc/reference/errorcode-ads.md",
+    "line_number": 124,
+    "problematic_sentence": "请检查该设备是否支迟使用的API。",
+    "reason": "\"支迟\"应为\"支持\"，属于同音字错误",
+    "fixed_sentence": "请检查该设备是否支持使用的API。"
+  }
+]
