@@ -3,6 +3,7 @@ env/
 __pycache__
 
 *.zip
-results_RAG/intermediate_results
+RAG/result/知识库/results_RAG/intermediate_results
+RAG/result/vector_db
 zh-cn-bad
 *.faiss

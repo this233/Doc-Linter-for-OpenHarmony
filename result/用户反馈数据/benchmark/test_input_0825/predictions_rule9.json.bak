@@ -1,0 +1,520 @@
+[
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 720,
+    "problematic_sentence": "定义enum类型时，需显式声明number类型，以支持浮点数值。",
+    "reason": "与前面说明的\"ArkTS1.2中enum的值必须为整型\"存在矛盾，且表述不够准确。",
+    "fixed_sentence": "定义enum类型时，应使用整型数值作为枚举值。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 737,
+    "problematic_sentence": "enum Size: number{ ",
+    "reason": "示例代码与规则解释部分存在矛盾，规则已说明enum不支持浮点数但示例仍展示浮点数。",
+    "fixed_sentence": "enum Size {"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 1284,
+    "problematic_sentence": "ArkTS1.2不支持Switch语句的中case重复。",
+    "reason": "使用了不规范的表达方式，'的中'属于口语化表达，且语句结构不够专业。",
+    "fixed_sentence": "ArkTS1.2不支持Switch语句中重复的case条件。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 1288,
+    "problematic_sentence": "提高代码的可读性。",
+    "reason": "变更原因描述过于简略，未能充分说明技术决策背景。",
+    "fixed_sentence": "此变更旨在消除潜在的逻辑混淆风险，并增强代码的可维护性和可读性。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 1292,
+    "problematic_sentence": "避免出现重复的case。",
+    "reason": "适配建议表述过于简单，未提供具体操作指导。",
+    "fixed_sentence": "建议检查所有Switch语句，合并相同逻辑的case分支，确保每个case条件具有唯一性。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 1353,
+    "problematic_sentence": "ArkTS1.2不需要lazy关键字。",
+    "reason": "表述过于绝对且不够专业，未说明技术实现细节。",
+    "fixed_sentence": "ArkTS1.2的模块加载机制已优化为默认延迟加载模式，因此不再需要显式声明lazy关键字。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 1361,
+    "problematic_sentence": "移除lazy关键字。",
+    "reason": "适配建议过于简略，缺乏具体的操作说明和注意事项。",
+    "fixed_sentence": "在迁移到ArkTS1.2时，应当删除所有import语句中的lazy关键字，同时确保模块依赖关系不受影响。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 1485,
+    "problematic_sentence": "按示例修改。",
+    "reason": "表述过于简略且口语化，缺乏专业性和明确指导意义。",
+    "fixed_sentence": "请参考以下示例代码进行修改。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 1448,
+    "problematic_sentence": "将导入文件中的执行逻辑移到本文件中。",
+    "reason": "表述不够准确，'移到'一词过于口语化。",
+    "fixed_sentence": "需要将导入文件中的执行逻辑迁移到当前文件中实现。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 3040,
+    "problematic_sentence": "ArkTS1.2要求数组元素类型明确（需上下文推导），禁止稀疏存储（内存浪费）且不允许undefined空位（空值安全）。",
+    "reason": "使用了口语化表达'内存浪费'，建议使用更专业的术语",
+    "fixed_sentence": "ArkTS1.2要求数组元素类型明确（需上下文推导），禁止稀疏存储（避免内存资源低效利用）且不允许undefined空位（遵循空值安全原则）。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 3002,
+    "problematic_sentence": "不支持debugger语句。",
+    "reason": "表述过于简短生硬，可以更完整地说明",
+    "fixed_sentence": "ArkTS1.2不支持使用debugger语句。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 3008,
+    "problematic_sentence": "使用debugger会侵入式地修改源码。",
+    "reason": "'侵入式'属于非专业比喻，建议使用更准确的技术描述",
+    "fixed_sentence": "使用debugger语句会在源代码中插入调试指令。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 3010,
+    "problematic_sentence": "debugger语句会被优化，可能导致行为不一致。",
+    "reason": "表述不够明确，'行为不一致'范围太广",
+    "fixed_sentence": "debugger语句可能被编译器优化，导致调试行为与预期不符。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19575.md",
+    "line_number": 3085,
+    "problematic_sentence": "线程共享对象要通过局部变量进行[智能转换](#智能转换)。",
+    "reason": "缺少必要的技术背景说明，直接给出建议显得突兀",
+    "fixed_sentence": "对于线程共享对象，建议先将其赋值给局部变量后再进行[智能转换](#智能转换)操作。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19665.md",
+    "line_number": 3719,
+    "problematic_sentence": "“逆”为相反的意思，即转换关系与继承关系相反，以方法参数为例说明，当类Son继承Father时，Son的方法`func1`的参数类型反而比Father更**宽泛**",
+    "reason": "使用了口语化的解释方式，且用词不够专业。",
+    "fixed_sentence": "逆变表示类型转换方向与继承关系相反。以方法参数为例，当类Son继承Father时，Son的方法`func1`的参数类型相对于Father具有更宽泛的类型约束。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19665.md",
+    "line_number": 3721,
+    "problematic_sentence": "“协”为一致的意思，即转换关系与继承关系相同，如下Son中的方法`func2`的参数类型比Father更**具体**",
+    "reason": "使用了口语化的解释方式，且用词不够专业。",
+    "fixed_sentence": "协变表示类型转换方向与继承关系保持一致。如下所示，Son类中`func2`方法的参数类型相对于Father具有更具体的类型约束。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 98,
+    "problematic_sentence": "如果应用未适配SDK 20也可以通过NDK方式调用：",
+    "reason": "使用了口语化的表达方式“如果...的话”，且不够专业",
+    "fixed_sentence": "对于未适配SDK 20的应用，可使用NDK方式进行调用："
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 114,
+    "problematic_sentence": "// 设置114 web内核",
+    "reason": "使用数字直接作为版本号不够专业，且114可能引起歧义",
+    "fixed_sentence": "// 设置Web内核版本1"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 347,
+    "problematic_sentence": "不建议开发者在M114内核中使用以上接口。",
+    "reason": "使用了口语化的表达方式，不够专业和客观。",
+    "fixed_sentence": "在M114内核中使用以上接口可能无法达到预期效果。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 399,
+    "problematic_sentence": "不建议开发者在M114内核中使用以上接口。",
+    "reason": "使用了口语化的表达方式，不够专业和客观。",
+    "fixed_sentence": "在M114内核中使用以上接口可能无法达到预期效果。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 937,
+    "problematic_sentence": "下述两个接口在M114行也会毁掉，只是……",
+    "reason": "使用了不专业的口语化表达'毁掉'，且句子不完整",
+    "fixed_sentence": "下述两个接口在M114内核上也会被调用，但存在以下差异："
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 935,
+    "problematic_sentence": "应用业务如果依赖此类回调的执行，需要做好兼容适配，确保不回调时，业务也可以降级完成。",
+    "reason": "使用了'兼容适配'和'降级完成'等行话",
+    "fixed_sentence": "如果应用程序依赖这些回调的执行，需要实现兼容性处理，确保在没有回调的情况下功能仍能正常运作。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1031,
+    "problematic_sentence": " * If the condition is matched, the drawing schedule does not reply on Vsync scheduling ",
+    "reason": "存在语法错误和术语使用不规范，'reply'应为'rely'，且表述不够专业。",
+    "fixed_sentence": " * If the condition is matched, the drawing schedule does not rely on Vsync scheduling"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1032,
+    "problematic_sentence": " * and directly rendering and drawing",
+    "reason": "表述冗余且不够专业，'rendering and drawing'存在重复。",
+    "fixed_sentence": " * and directly performs rendering"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1052,
+    "problematic_sentence": " 不建议开发者在M114内核中使用以上接口。",
+    "reason": "表述不够客观正式，'不建议'语气偏口语化。",
+    "fixed_sentence": "该接口在M114内核中不推荐使用。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1121,
+    "problematic_sentence": "  * VIDEO：上下文菜单识别为视频内容",
+    "reason": "冒号使用中文标点，与技术文档规范不符。",
+    "fixed_sentence": "  * VIDEO: Context menu identifies video content"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1122,
+    "problematic_sentence": "  * AUDIO：上下文菜单识别为音频内容",
+    "reason": "冒号使用中文标点，与技术文档规范不符。",
+    "fixed_sentence": "  * AUDIO: Context menu identifies audio content"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1126,
+    "problematic_sentence": "undo：在编辑区调用该接口会重做用户上一步的修改",
+    "reason": "描述不准确，undo应为撤销操作而非重做操作",
+    "fixed_sentence": "undo：在编辑区调用该接口会撤销用户上一步的修改"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1127,
+    "problematic_sentence": "redo：在编辑区调用该接口会重做用户上一步的修改",
+    "reason": "重复使用相同描述，且与undo操作描述完全一致",
+    "fixed_sentence": "redo：在编辑区调用该接口会恢复被撤销的用户修改"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1131,
+    "problematic_sentence": "WebContextMenuResult新增的接口调用后不生效，且系统不报错、不抛异常、无错误码。",
+    "reason": "重复使用否定句式，表达冗余",
+    "fixed_sentence": "WebContextMenuResult新增的接口在M114内核中无效，且不会产生任何错误提示"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1140,
+    "problematic_sentence": "Link,corresponding link type.",
+    "reason": "存在语法错误和表述不完整",
+    "fixed_sentence": "LINK - 表示超链接元素类型"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1186,
+    "problematic_sentence": "不建议开发者在M114内核中使用以上接口。",
+    "reason": "使用了主观建议性表达",
+    "fixed_sentence": "M114内核不支持使用以上接口功能"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1240,
+    "problematic_sentence": "  不建议开发者在M114内核中使用以上接口。",
+    "reason": "使用了命令式口吻，不符合友好客观的写作规范",
+    "fixed_sentence": "在M114内核中使用以上接口可能存在兼容性问题。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1269,
+    "problematic_sentence": "  应用在M114内核上为组件设置上述回调不生效，不报错、不抛异常、无错误码；设置后系统不会触发此回调。",
+    "reason": "使用消极表述可能引起用户负面情绪",
+    "fixed_sentence": "在M114内核中设置上述回调不会生效，系统不会返回错误信息或触发回调。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1340,
+    "problematic_sentence": "Triggered when mouse effect on embed tag.",
+    "reason": "使用了非专业表达'effect on'，可能引起歧义，不符合技术文档的专业性要求",
+    "fixed_sentence": "Triggered when mouse interacts with embed tag."
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1342,
+    "problematic_sentence": "callback Triggered when mouse effect on embed tag.",
+    "reason": "重复使用了非专业表达'effect on'，且表述不够清晰",
+    "fixed_sentence": "callback triggered when mouse interacts with embed tag."
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1605,
+    "problematic_sentence": "ndk接口支持在异步线程注册JavaScriptProxy，避免ui线程繁忙导致的阻塞。",
+    "reason": "使用了口语化表达'避免...导致的阻塞'，不够专业",
+    "fixed_sentence": "ndk接口支持在异步线程注册JavaScriptProxy，以减轻UI线程的负载压力。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1607,
+    "problematic_sentence": "设置不生效，不会抛异常，也不会返回错误码。",
+    "reason": "使用了口语化表达'不会抛异常'",
+    "fixed_sentence": "设置不生效，不会触发异常，也不会返回错误码。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1608,
+    "problematic_sentence": "不建议开发者在M114内核中使用以上接口。",
+    "reason": "使用了主观性表达'不建议'，不够客观",
+    "fixed_sentence": "M114内核不支持使用以上接口。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1651,
+    "problematic_sentence": "We will read data from a worker thread to the buffer,\\n* so should not use the buffer in other threads before the callback to avoid concurrency issues.",
+    "reason": "使用了非正式表达'should not'",
+    "fixed_sentence": "Data will be read from a worker thread to the buffer. To prevent concurrency issues, the buffer should not be used in other threads before the callback."
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1664,
+    "problematic_sentence": "ArkWebHttpBodyStream_AsyncRead 支持异步异步数据，常用于性能优化 。",
+    "reason": "重复使用'异步'一词，存在语病且不够专业。",
+    "fixed_sentence": "ArkWebHttpBodyStream_AsyncRead 支持异步数据读取，可优化数据传输性能。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19675.md",
+    "line_number": 1669,
+    "problematic_sentence": "不建议开发者在M114内核中使用以上接口。",
+    "reason": "表达方式不够客观，带有主观建议性。",
+    "fixed_sentence": "在M114内核中以上接口可能无法正常工作。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19702.md",
+    "line_number": 1758,
+    "problematic_sentence": "认证执过程中的提示信息。",
+    "reason": "存在错别字，'执'应为'执行'",
+    "fixed_sentence": "认证执行过程中的提示信息。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 1249,
+    "problematic_sentence": "使用callback异步回调。",
+    "reason": "使用了口语化表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "通过callback函数实现异步回调。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 1278,
+    "problematic_sentence": "使用callback异步回调。",
+    "reason": "使用了口语化表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "通过callback函数实现异步回调。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 1305,
+    "problematic_sentence": "订阅文本选择范围变化事件。使用callback异步回调。",
+    "reason": "使用了口语化表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "订阅文本选择范围变化事件，通过callback函数实现异步回调。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 1860,
+    "problematic_sentence": "获取当前窗口的所在id,使用Promise异步回调。",
+    "reason": "使用了口语化表达'获取...的所在id'，且存在逗号使用不规范的问题",
+    "fixed_sentence": "获取当前窗口的显示ID，使用Promise异步回调。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 1868,
+    "problematic_sentence": "Promise对象。返回窗口的displayId。",
+    "reason": "使用了不完整的句子和口语化表达",
+    "fixed_sentence": "返回Promise对象，其中包含窗口的显示ID。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 3875,
+    "problematic_sentence": "input method client error. Possible causes: 1.the edit box is not focused. 2.no edit box is bound to current input method application.",
+    "reason": "错误信息描述中使用了不规范的英文大小写和标点符号，且部分表述不够专业",
+    "fixed_sentence": "Input method client error. Possible causes: 1. The edit box is not focused. 2. No edit box is bound to the current input method application."
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 3914,
+    "problematic_sentence": "input method client error. Possible causes: 1.the edit box is not focused. 2.no edit box is bound to current input method application.",
+    "reason": "错误信息描述中使用了不规范的英文大小写和标点符号，且部分表述不够专业",
+    "fixed_sentence": "Input method client error. Possible causes: 1. The edit box is not focused. 2. No edit box is bound to the current input method application."
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 3949,
+    "problematic_sentence": "input method client error. Possible causes: 1.the edit box is not focused. 2.no edit box is bound to current input method application.",
+    "reason": "错误信息描述中使用了不规范的英文大小写和标点符号，且部分表述不够专业",
+    "fixed_sentence": "Input method client error. Possible causes: 1. The edit box is not focused. 2. No edit box is bound to the current input method application."
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 5457,
+    "problematic_sentence": "console.info('Succeeded in inserting text.');",
+    "reason": "使用了非技术性的表达方式，且包含口语化的词汇。",
+    "fixed_sentence": "console.info('Text insertion completed successfully.');"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 5459,
+    "problematic_sentence": "console.error('Failed to insertText.');",
+    "reason": "使用了非技术性的表达方式，且包含口语化的词汇。",
+    "fixed_sentence": "console.error('Text insertion failed.');"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 5495,
+    "problematic_sentence": "console.info('Succeeded in inserting text.');",
+    "reason": "使用了非技术性的表达方式，且包含口语化的词汇。",
+    "fixed_sentence": "console.info('Text insertion completed successfully.');"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 5497,
+    "problematic_sentence": "console.error('Failed to insertText.');",
+    "reason": "使用了非技术性的表达方式，且包含口语化的词汇。",
+    "fixed_sentence": "console.error('Text insertion failed.');"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19772.md",
+    "line_number": 5529,
+    "problematic_sentence": "console.error(`Failed to getEditorAttribute: ${JSON.stringify(err)}`);",
+    "reason": "使用了非技术性的表达方式，且包含口语化的词汇。",
+    "fixed_sentence": "console.error(`getEditorAttribute operation failed: ${JSON.stringify(err)}`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 321,
+    "problematic_sentence": "console.info(`on stop , do stop task`);",
+    "reason": "使用了口语化的表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "console.info(`Handling stop command`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 326,
+    "problematic_sentence": "console.info(`on playNext , do playNext task`);",
+    "reason": "使用了口语化的表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "console.info(`Handling playNext command`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 331,
+    "problematic_sentence": "console.info(`on playPrevious , do playPrevious task`);",
+    "reason": "使用了口语化的表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "console.info(`Handling playPrevious command`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 336,
+    "problematic_sentence": "console.info(`on fastForward , do fastForward task`);",
+    "reason": "使用了口语化的表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "console.info(`Handling fastForward command`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 341,
+    "problematic_sentence": "console.info(`on rewind , do rewind task`);",
+    "reason": "使用了口语化的表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "console.info(`Handling rewind command`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 346,
+    "problematic_sentence": "console.info(`on seek , the seek time is ${time}`);",
+    "reason": "使用了口语化的表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "console.info(`Processing seek command with time: ${time}`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 351,
+    "problematic_sentence": "console.info(`on setSpeed , the speed is ${speed}`);",
+    "reason": "使用了口语化的表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "console.info(`Setting playback speed to: ${speed}`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 355,
+    "problematic_sentence": "console.info(`on setLoopMode , the loop mode is ${mode}`);",
+    "reason": "使用了口语化的表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "console.info(`Setting loop mode to: ${mode}`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 360,
+    "problematic_sentence": "console.info(`on toggleFavorite , the target asset Id is ${assetId}`);",
+    "reason": "使用了口语化的表达，不符合技术文档的专业性要求。",
+    "fixed_sentence": "console.info(`Toggling favorite status for asset ID: ${assetId}`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 397,
+    "problematic_sentence": "// 一般在监听器中会对播放器做相应逻辑处理。",
+    "reason": "使用了口语化的表达“做相应逻辑处理”，不符合技术文档的专业性要求。",
+    "fixed_sentence": "// 监听器通常包含播放器控制逻辑。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 398,
+    "problematic_sentence": "// 不要忘记处理完后需要通过set接口同步播放相关信息，参考上面的用例。",
+    "reason": "使用了口语化的表达“不要忘记”和“处理完后”，不符合技术文档的专业性要求。",
+    "fixed_sentence": "// 处理完成后，需要通过set接口同步播放信息，具体可参考前文示例。"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 400,
+    "problematic_sentence": "console.info(`on skipToQueueItem , do skip task`);",
+    "reason": "使用了口语化的表达方式，且日志信息不够专业",
+    "fixed_sentence": "console.info(`Processing skipToQueueItem event for task skipping`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 404,
+    "problematic_sentence": "console.info(`on handleKeyEvent , the event is ${JSON.stringify(event)}`);",
+    "reason": "使用了口语化的表达方式，且日志信息不够专业",
+    "fixed_sentence": "console.info(`Handling key event: ${JSON.stringify(event)}`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 408,
+    "problematic_sentence": "console.info(`on outputDeviceChange , the device info is ${JSON.stringify(device)}`);",
+    "reason": "使用了口语化的表达方式，且日志信息不够专业",
+    "fixed_sentence": "console.info(`Processing output device change: ${JSON.stringify(device)}`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 412,
+    "problematic_sentence": "console.info(`on commonCommand , command is ${commandString}, args are ${JSON.stringify(args)}`);",
+    "reason": "使用了口语化的表达方式，且日志信息不够专业",
+    "fixed_sentence": "console.info(`Executing common command: ${commandString} with arguments: ${JSON.stringify(args)}`);"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 452,
+    "problematic_sentence": "// do some things.",
+    "reason": "使用了口语化的表达方式",
+    "fixed_sentence": "// Process playback state changes"
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 438,
+    "problematic_sentence": "// 假设已经创建了一个session，如何创建session可以参考之前的案例。",
+    "reason": "使用了口语化的表达方式",
+    "fixed_sentence": "// Reference previous examples for session creation."
+  },
+  {
+    "file": "/root/code/docs_llm/test_input_0825/export_19776.md",
+    "line_number": 478,
+    "problematic_sentence": "// 假设已经创建了一个session，如何创建session可以参考之前的案例。",
+    "reason": "重复使用口语化的表达方式",
+    "fixed_sentence": "// Refer to previous examples for session creation."
+  }
+]

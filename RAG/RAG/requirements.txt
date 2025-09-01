@@ -1,0 +1,27 @@
+# RAG System API 依赖项
+
+# Web框架
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# HTTP客户端 (用于测试)
+requests>=2.31.0
+
+# 数据验证
+pydantic>=2.5.0
+
+# 数据处理
+numpy>=1.24.0
+torch>=2.0.0
+
+# 向量数据库
+faiss-cpu>=1.7.4
+
+# LLM和嵌入模型
+vllm>=0.2.0
+
+# 文档处理
+langchain>=0.1.0
+
+# 日志和工具
+python-multipart>=0.0.6 

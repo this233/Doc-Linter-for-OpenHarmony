@@ -1,0 +1,37 @@
+{
+  "total_predictions": 74,
+  "total_false_positives": 0,
+  "false_positive_rate": 0.0,
+  "per_file": {
+    "19575": {
+      "pred": 14,
+      "fp": 0,
+      "fp_rate": 0.0
+    },
+    "19665": {
+      "pred": 2,
+      "fp": 0,
+      "fp_rate": 0.0
+    },
+    "19675": {
+      "pred": 26,
+      "fp": 0,
+      "fp_rate": 0.0
+    },
+    "19702": {
+      "pred": 1,
+      "fp": 0,
+      "fp_rate": 0.0
+    },
+    "19772": {
+      "pred": 13,
+      "fp": 0,
+      "fp_rate": 0.0
+    },
+    "19776": {
+      "pred": 18,
+      "fp": 0,
+      "fp_rate": 0.0
+    }
+  }
+}
