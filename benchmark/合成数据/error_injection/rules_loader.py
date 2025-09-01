@@ -5,7 +5,7 @@ RULE_FILES = {
 	# "punctuation_check": "DocLinter方案/prompt/punctuation_check.md",
 	# "spelling_errors": "DocLinter方案/prompt/spelling_errors.md",
 	# "inconsistent": "DocLinter方案/prompt/inconsistent.md",
-	"fluent_etc": "DocLinter方案/prompt/fluent_etc1.md",
+	"fluent_etc": "/root/code/docs_llm/DocLinter_prompt/modify/DocLinter方案_modify/prompt/fluent_etc1.md",
 	# "colloquial_expression": "DocLinter方案/prompt/colloquial_expression.md",
 	# "redundant_expression": "DocLinter方案/prompt/redundant_expression.md",
 	# "repeat_words_blanks": "DocLinter方案/prompt/repeat_words_blanks.md",

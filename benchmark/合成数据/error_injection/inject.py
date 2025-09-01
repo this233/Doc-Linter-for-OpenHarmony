@@ -19,8 +19,8 @@ def is_code_or_url_line(line: str, in_code_block: bool) -> Tuple[bool, bool]:
 		return True, not in_code_block  # toggle
 	if in_code_block:
 		return True, in_code_block
-	if URL_RE.search(line):
-		return True, in_code_block
+	# if URL_RE.search(line):
+	# 	return True, in_code_block
 	return False, in_code_block
 
 
@@ -29,13 +29,13 @@ def choose_candidate_lines(lines: List[str], max_candidates: int) -> List[int]:
 	in_code = False
 	for idx, line in enumerate(lines):
 		flag, in_code = is_code_or_url_line(line, in_code)
-		# if flag:
-		# 	continue
+		if flag:
+			continue
 		text = line.strip()
-		# if not text:
-		# 	continue
-		# if HEADER_RE.match(text):
-		# 	continue
+		if not text:
+			continue
+		if HEADER_RE.match(text):
+			continue
 		# Prefer lines with Chinese punctuation or longer length
 		if any(p in text for p in ["。", "，", "：", "；"]) or len(text) >= 20:
 			indices.append(idx)
@@ -218,10 +218,10 @@ def main():
 	parser = argparse.ArgumentParser(description="Inject rule-based errors into OpenHarmony docs")
 	parser.add_argument("--docs_dir", default="/root/code/docs_llm/docs/zh-cn/application-dev")
 	parser.add_argument("--repo_root", default="/root/code/docs_llm")
-	parser.add_argument("--out_dir", default="/root/code/docs_llm/results_error_fluent/zh-cn-bad")
-	parser.add_argument("--annotation_file", default="/root/code/docs_llm/results_error_fluent/annotations.json")
+	parser.add_argument("--out_dir", default="/root/code/docs_llm/result/lwh/合成数据/语句通畅/results_error_fluent_without_code/zh-cn-bad")
+	parser.add_argument("--annotation_file", default="/root/code/docs_llm/result/lwh/合成数据/语句通畅/results_error_fluent_without_code/annotations.json")
 	parser.add_argument("--max_errors_per_file", type=int, default=16)
-	parser.add_argument("--max_files", type=int, default=25)
+	parser.add_argument("--max_files", type=int, default=50)
 	parser.add_argument("--seed", type=int, default=42)
 	args = parser.parse_args()
 

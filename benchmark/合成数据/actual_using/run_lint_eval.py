@@ -53,16 +53,16 @@ def extract_non_code_lines_with_numbers(md_path: str) -> List[Dict[str, Any]]:
     with open(md_path, "r", encoding="utf-8") as f:
         for idx, raw_line in enumerate(f, start=1):
             line = raw_line.rstrip("\n")
-            # if fence_re.match(line):
-            #     in_code_block = not in_code_block
-            #     continue
-            # if in_code_block:
-            #     continue
+            if fence_re.match(line):
+                in_code_block = not in_code_block
+                continue
+            if in_code_block:
+                continue
             # if is_url_line(line):
             #     continue
-            # # Keep markdown formatting intact, but skip empty lines to reduce token usage
-            # if not line.strip():
-            #     continue
+            # Keep markdown formatting intact, but skip empty lines to reduce token usage
+            if not line.strip():
+                continue
             items.append({"lineNum": idx, "lineContent": line})
     return items
 

@@ -9,521 +9,531 @@
   },
   "metrics": {
     "overall": {
-      "tp": 0,
-      "fp": 962,
-      "fn": 0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0
+      "tp": 319,
+      "fp": 643,
+      "fn": 405,
+      "precision": 0.331601,
+      "recall": 0.440608,
+      "f1": 0.37841
     },
     "grouped": {
       "reference": {
-        "tp": 0,
-        "fp": 458,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0
+        "tp": 113,
+        "fp": 345,
+        "fn": 248,
+        "precision": 0.246725,
+        "recall": 0.313019,
+        "f1": 0.275946
       },
       "non_reference": {
-        "tp": 0,
-        "fp": 504,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0
+        "tp": 206,
+        "fp": 298,
+        "fn": 157,
+        "precision": 0.40873,
+        "recall": 0.567493,
+        "f1": 0.475202
       }
     },
     "per_file": {
       "application-models/bind-serviceextensionability-from-fa.md": {
-        "tp": 0,
-        "fp": 16,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 16
-      },
-      "application-models/connect-serviceability.md": {
-        "tp": 0,
-        "fp": 6,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 6
-      },
-      "application-models/fa-model-development-overview.md": {
-        "tp": 0,
-        "fp": 3,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 3
-      },
-      "application-models/start-express-apps.md": {
-        "tp": 0,
-        "fp": 15,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 15
-      },
-      "basic-services/compress/deflate-and-inflate.md": {
-        "tp": 0,
-        "fp": 27,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 27
-      },
-      "connectivity/connectivity-kit-intro.md": {
-        "tp": 0,
-        "fp": 18,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 18
-      },
-      "device/driver/externaldevice-guidelines.md": {
-        "tp": 0,
-        "fp": 11,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 11
-      },
-      "dfx/hilog-guidelines-ndk.md": {
-        "tp": 0,
-        "fp": 9,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 9
-      },
-      "internationalization/i18n-l10n.md": {
-        "tp": 0,
-        "fp": 7,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 7
-      },
-      "key-features/multi-device-app-dev/case.md": {
-        "tp": 0,
-        "fp": 24,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 24
-      },
-      "key-features/multi-device-app-dev/settings-application-page.md": {
-        "tp": 0,
-        "fp": 20,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 20
-      },
-      "media/audio/audio-ear-monitor-loopback.md": {
-        "tp": 0,
-        "fp": 12,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 12
-      },
-      "media/camera/camera-deferred-photo.md": {
-        "tp": 0,
-        "fp": 10,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 10
-      },
-      "media/media/using-avtranscoder-for-transcodering.md": {
-        "tp": 0,
-        "fp": 15,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 15
-      },
-      "media/media/using-soundpool-for-playback.md": {
-        "tp": 0,
-        "fp": 13,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 13
-      },
-      "napi/debug-ide.md": {
-        "tp": 0,
-        "fp": 5,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 5
-      },
-      "napi/jsvm-debugger-cpuprofiler-heapsnapshot.md": {
-        "tp": 0,
-        "fp": 22,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 22
-      },
-      "napi/napi_status_introduction.md": {
-        "tp": 0,
-        "fp": 134,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 134
-      },
-      "napi/use-napi-about-array.md": {
-        "tp": 0,
-        "fp": 46,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 46
-      },
-      "reference/apis-ability-kit/js-apis-app-ability-abilityConstant-sys.md": {
-        "tp": 0,
-        "fp": 5,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 5
-      },
-      "reference/apis-ability-kit/js-apis-bundleManager-shortcutInfo.md": {
-        "tp": 0,
-        "fp": 4,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 4
-      },
-      "reference/apis-accessibility-kit/js-apis-accessibility-config-sys.md": {
-        "tp": 0,
-        "fp": 43,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 43
-      },
-      "reference/apis-arkdata/capi-rdb-oh-data-values.md": {
-        "tp": 0,
-        "fp": 3,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 3
-      },
-      "reference/apis-arkgraphics2d/arkts-apis-graphics-drawing-Lattice.md": {
-        "tp": 0,
-        "fp": 8,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 8
-      },
-      "reference/apis-arkgraphics2d/capi-drawing-oh-drawing-region.md": {
-        "tp": 0,
-        "fp": 4,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 4
+        "tp": 15,
+        "fp": 1,
+        "fn": 1,
+        "num_gt": 16,
+        "num_pred": 16,
+        "precision": 0.9375,
+        "recall": 0.9375,
+        "f1": 0.9375
       },
       "reference/apis-arkts/js-apis-hashset.md": {
-        "tp": 0,
-        "fp": 21,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 21
-      },
-      "reference/apis-arkui/arkui-js/js-components-basic-richtext.md": {
-        "tp": 0,
-        "fp": 7,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 7
-      },
-      "reference/apis-arkui/arkui-js/js-components-custom-props.md": {
-        "tp": 0,
-        "fp": 6,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 6
-      },
-      "reference/apis-arkui/arkui-ts/ohos-arkui-advanced-SubHeader.md": {
-        "tp": 0,
-        "fp": 13,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 13
-      },
-      "reference/apis-arkui/arkui-ts/ts-animatorproperty.md": {
-        "tp": 0,
-        "fp": 5,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 5
-      },
-      "reference/apis-arkui/capi-arkui-nativemodule-arkui-customproperty.md": {
-        "tp": 0,
-        "fp": 3,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 3
-      },
-      "reference/apis-arkui/capi-arkui-nativemodule-arkui-nativenodeapi-1.md": {
-        "tp": 0,
-        "fp": 55,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 55
-      },
-      "reference/apis-arkui/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-touchevent.md": {
-        "tp": 0,
-        "fp": 9,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 9
-      },
-      "reference/apis-avcodec-kit/_audio_encoder.md": {
-        "tp": 0,
-        "fp": 22,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 22
-      },
-      "reference/apis-basic-services-kit/js-apis-system-time.md": {
-        "tp": 0,
-        "fp": 18,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 18
+        "tp": 5,
+        "fp": 16,
+        "fn": 11,
+        "num_gt": 16,
+        "num_pred": 21,
+        "precision": 0.238095,
+        "recall": 0.3125,
+        "f1": 0.27027
       },
       "reference/apis-basic-services-kit/js-apis-wallpaper-sys.md": {
-        "tp": 0,
-        "fp": 45,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 45
+        "tp": 8,
+        "fp": 37,
+        "fn": 8,
+        "num_gt": 16,
+        "num_pred": 45,
+        "precision": 0.177778,
+        "recall": 0.5,
+        "f1": 0.262295
       },
-      "reference/apis-core-file-kit/js-apis-fileShare-sys.md": {
-        "tp": 0,
-        "fp": 10,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 10
-      },
-      "reference/apis-ipc-kit/capi-ipckit.md": {
-        "tp": 0,
+      "reference/apis-arkui/arkui-ts/ts-animatorproperty.md": {
+        "tp": 2,
         "fp": 3,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 3
+        "fn": 14,
+        "num_gt": 16,
+        "num_pred": 5,
+        "precision": 0.4,
+        "recall": 0.125,
+        "f1": 0.190476
+      },
+      "napi/jsvm-debugger-cpuprofiler-heapsnapshot.md": {
+        "tp": 11,
+        "fp": 11,
+        "fn": 5,
+        "num_gt": 16,
+        "num_pred": 22,
+        "precision": 0.5,
+        "recall": 0.6875,
+        "f1": 0.578947
+      },
+      "application-models/start-express-apps.md": {
+        "tp": 12,
+        "fp": 3,
+        "fn": 4,
+        "num_gt": 16,
+        "num_pred": 15,
+        "precision": 0.8,
+        "recall": 0.75,
+        "f1": 0.774194
+      },
+      "reference/apis-avcodec-kit/_audio_encoder.md": {
+        "tp": 5,
+        "fp": 17,
+        "fn": 11,
+        "num_gt": 16,
+        "num_pred": 22,
+        "precision": 0.227273,
+        "recall": 0.3125,
+        "f1": 0.263158
+      },
+      "basic-services/compress/deflate-and-inflate.md": {
+        "tp": 13,
+        "fp": 14,
+        "fn": 3,
+        "num_gt": 16,
+        "num_pred": 27,
+        "precision": 0.481481,
+        "recall": 0.8125,
+        "f1": 0.604651
       },
       "reference/apis-media-kit/capi-lowpower-audio-sink-h.md": {
-        "tp": 0,
-        "fp": 41,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 41
-      },
-      "reference/apis-network-kit/js-apis-system-network.md": {
-        "tp": 0,
-        "fp": 4,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 4
-      },
-      "reference/apis-notification-kit/js-apis-notification.md": {
-        "tp": 0,
-        "fp": 55,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 55
-      },
-      "reference/apis-sensor-service-kit/js-apis-sensor-sys.md": {
-        "tp": 0,
-        "fp": 26,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 26
-      },
-      "reference/apis-sensor-service-kit/js-apis-system-sensor.md": {
-        "tp": 0,
-        "fp": 48,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 48
-      },
-      "task-management/Readme-CN.md": {
-        "tp": 0,
-        "fp": 7,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 7
-      },
-      "ui/arkts-ui-extension-components.md": {
-        "tp": 0,
+        "tp": 13,
         "fp": 28,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 28
-      },
-      "ui/state-management/arkts-new-Computed.md": {
-        "tp": 0,
-        "fp": 25,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 25
-      },
-      "ui/ui-js-building-ui-layout-external-container.md": {
-        "tp": 0,
-        "fp": 5,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 5
+        "fn": 3,
+        "num_gt": 16,
+        "num_pred": 41,
+        "precision": 0.317073,
+        "recall": 0.8125,
+        "f1": 0.45614
       },
       "ui/ui-js-components-toolbar.md": {
-        "tp": 0,
-        "fp": 14,
+        "tp": 11,
+        "fp": 3,
+        "fn": 5,
+        "num_gt": 16,
+        "num_pred": 14,
+        "precision": 0.785714,
+        "recall": 0.6875,
+        "f1": 0.733333
+      },
+      "media/media/using-soundpool-for-playback.md": {
+        "tp": 9,
+        "fp": 4,
+        "fn": 7,
+        "num_gt": 16,
+        "num_pred": 13,
+        "precision": 0.692308,
+        "recall": 0.5625,
+        "f1": 0.62069
+      },
+      "device/driver/externaldevice-guidelines.md": {
+        "tp": 6,
+        "fp": 5,
+        "fn": 10,
+        "num_gt": 16,
+        "num_pred": 11,
+        "precision": 0.545455,
+        "recall": 0.375,
+        "f1": 0.444444
+      },
+      "reference/apis-basic-services-kit/js-apis-system-time.md": {
+        "tp": 5,
+        "fp": 13,
+        "fn": 11,
+        "num_gt": 16,
+        "num_pred": 18,
+        "precision": 0.277778,
+        "recall": 0.3125,
+        "f1": 0.294118
+      },
+      "ui/state-management/arkts-new-Computed.md": {
+        "tp": 14,
+        "fp": 11,
+        "fn": 2,
+        "num_gt": 16,
+        "num_pred": 25,
+        "precision": 0.56,
+        "recall": 0.875,
+        "f1": 0.682927
+      },
+      "connectivity/connectivity-kit-intro.md": {
+        "tp": 16,
+        "fp": 2,
         "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 14
+        "num_gt": 16,
+        "num_pred": 18,
+        "precision": 0.888889,
+        "recall": 1.0,
+        "f1": 0.941176
+      },
+      "dfx/hilog-guidelines-ndk.md": {
+        "tp": 7,
+        "fp": 2,
+        "fn": 9,
+        "num_gt": 16,
+        "num_pred": 9,
+        "precision": 0.777778,
+        "recall": 0.4375,
+        "f1": 0.56
+      },
+      "reference/apis-notification-kit/js-apis-notification.md": {
+        "tp": 4,
+        "fp": 51,
+        "fn": 12,
+        "num_gt": 16,
+        "num_pred": 55,
+        "precision": 0.072727,
+        "recall": 0.25,
+        "f1": 0.112676
+      },
+      "napi/napi_status_introduction.md": {
+        "tp": 12,
+        "fp": 122,
+        "fn": 4,
+        "num_gt": 16,
+        "num_pred": 134,
+        "precision": 0.089552,
+        "recall": 0.75,
+        "f1": 0.16
+      },
+      "internationalization/i18n-l10n.md": {
+        "tp": 7,
+        "fp": 0,
+        "fn": 1,
+        "num_gt": 8,
+        "num_pred": 7,
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.933333
+      },
+      "media/audio/audio-ear-monitor-loopback.md": {
+        "tp": 2,
+        "fp": 10,
+        "fn": 14,
+        "num_gt": 16,
+        "num_pred": 12,
+        "precision": 0.166667,
+        "recall": 0.125,
+        "f1": 0.142857
+      },
+      "reference/apis-accessibility-kit/js-apis-accessibility-config-sys.md": {
+        "tp": 12,
+        "fp": 31,
+        "fn": 4,
+        "num_gt": 16,
+        "num_pred": 43,
+        "precision": 0.27907,
+        "recall": 0.75,
+        "f1": 0.40678
+      },
+      "reference/apis-arkui/capi-oh-nativexcomponent-native-xcomponent-oh-nativexcomponent-touchevent.md": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 7,
+        "num_gt": 16,
+        "num_pred": 9,
+        "precision": 1.0,
+        "recall": 0.5625,
+        "f1": 0.72
+      },
+      "key-features/multi-device-app-dev/settings-application-page.md": {
+        "tp": 13,
+        "fp": 7,
+        "fn": 3,
+        "num_gt": 16,
+        "num_pred": 20,
+        "precision": 0.65,
+        "recall": 0.8125,
+        "f1": 0.722222
+      },
+      "reference/apis-arkui/arkui-js/js-components-custom-props.md": {
+        "tp": 2,
+        "fp": 4,
+        "fn": 14,
+        "num_gt": 16,
+        "num_pred": 6,
+        "precision": 0.333333,
+        "recall": 0.125,
+        "f1": 0.181818
+      },
+      "ui/ui-js-building-ui-layout-external-container.md": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 8,
+        "num_gt": 12,
+        "num_pred": 5,
+        "precision": 0.8,
+        "recall": 0.333333,
+        "f1": 0.470588
       },
       "windowmanager/native-window-event-filter.md": {
-        "tp": 0,
-        "fp": 12,
+        "tp": 8,
+        "fp": 4,
+        "fn": 8,
+        "num_gt": 16,
+        "num_pred": 12,
+        "precision": 0.666667,
+        "recall": 0.5,
+        "f1": 0.571429
+      },
+      "application-models/connect-serviceability.md": {
+        "tp": 4,
+        "fp": 2,
+        "fn": 12,
+        "num_gt": 16,
+        "num_pred": 6,
+        "precision": 0.666667,
+        "recall": 0.25,
+        "f1": 0.363636
+      },
+      "reference/apis-core-file-kit/js-apis-fileShare-sys.md": {
+        "tp": 2,
+        "fp": 8,
+        "fn": 14,
+        "num_gt": 16,
+        "num_pred": 10,
+        "precision": 0.2,
+        "recall": 0.125,
+        "f1": 0.153846
+      },
+      "reference/apis-arkgraphics2d/arkts-apis-graphics-drawing-Lattice.md": {
+        "tp": 4,
+        "fp": 4,
+        "fn": 12,
+        "num_gt": 16,
+        "num_pred": 8,
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.333333
+      },
+      "reference/apis-sensor-service-kit/js-apis-sensor-sys.md": {
+        "tp": 5,
+        "fp": 21,
+        "fn": 11,
+        "num_gt": 16,
+        "num_pred": 26,
+        "precision": 0.192308,
+        "recall": 0.3125,
+        "f1": 0.238095
+      },
+      "reference/apis-arkui/arkui-ts/ohos-arkui-advanced-SubHeader.md": {
+        "tp": 4,
+        "fp": 9,
+        "fn": 12,
+        "num_gt": 16,
+        "num_pred": 13,
+        "precision": 0.307692,
+        "recall": 0.25,
+        "f1": 0.275862
+      },
+      "reference/apis-arkgraphics2d/capi-drawing-oh-drawing-region.md": {
+        "tp": 4,
+        "fp": 0,
         "fn": 0,
+        "num_gt": 4,
+        "num_pred": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "reference/apis-network-kit/js-apis-system-network.md": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 13,
+        "num_gt": 16,
+        "num_pred": 4,
+        "precision": 0.75,
+        "recall": 0.1875,
+        "f1": 0.3
+      },
+      "ui/arkts-ui-extension-components.md": {
+        "tp": 9,
+        "fp": 19,
+        "fn": 7,
+        "num_gt": 16,
+        "num_pred": 28,
+        "precision": 0.321429,
+        "recall": 0.5625,
+        "f1": 0.409091
+      },
+      "reference/apis-arkui/arkui-js/js-components-basic-richtext.md": {
+        "tp": 6,
+        "fp": 1,
+        "fn": 10,
+        "num_gt": 16,
+        "num_pred": 7,
+        "precision": 0.857143,
+        "recall": 0.375,
+        "f1": 0.521739
+      },
+      "media/media/using-avtranscoder-for-transcodering.md": {
+        "tp": 10,
+        "fp": 5,
+        "fn": 6,
+        "num_gt": 16,
+        "num_pred": 15,
+        "precision": 0.666667,
+        "recall": 0.625,
+        "f1": 0.645161
+      },
+      "media/camera/camera-deferred-photo.md": {
+        "tp": 4,
+        "fp": 6,
+        "fn": 12,
+        "num_gt": 16,
+        "num_pred": 10,
+        "precision": 0.4,
+        "recall": 0.25,
+        "f1": 0.307692
+      },
+      "reference/apis-arkdata/capi-rdb-oh-data-values.md": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 5,
+        "num_gt": 8,
+        "num_pred": 3,
+        "precision": 1.0,
+        "recall": 0.375,
+        "f1": 0.545455
+      },
+      "task-management/Readme-CN.md": {
+        "tp": 7,
+        "fp": 0,
+        "fn": 2,
+        "num_gt": 9,
+        "num_pred": 7,
+        "precision": 1.0,
+        "recall": 0.777778,
+        "f1": 0.875
+      },
+      "application-models/fa-model-development-overview.md": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 3,
+        "num_gt": 6,
+        "num_pred": 3,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.666667
+      },
+      "napi/debug-ide.md": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 3,
+        "num_gt": 8,
+        "num_pred": 5,
+        "precision": 1.0,
+        "recall": 0.625,
+        "f1": 0.769231
+      },
+      "napi/use-napi-about-array.md": {
+        "tp": 1,
+        "fp": 45,
+        "fn": 15,
+        "num_gt": 16,
+        "num_pred": 46,
+        "precision": 0.021739,
+        "recall": 0.0625,
+        "f1": 0.032258
+      },
+      "reference/apis-ipc-kit/capi-ipckit.md": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 5,
+        "num_gt": 8,
+        "num_pred": 3,
+        "precision": 1.0,
+        "recall": 0.375,
+        "f1": 0.545455
+      },
+      "key-features/multi-device-app-dev/case.md": {
+        "tp": 3,
+        "fp": 21,
+        "fn": 13,
+        "num_gt": 16,
+        "num_pred": 24,
+        "precision": 0.125,
+        "recall": 0.1875,
+        "f1": 0.15
+      },
+      "reference/apis-sensor-service-kit/js-apis-system-sensor.md": {
+        "tp": 5,
+        "fp": 43,
+        "fn": 11,
+        "num_gt": 16,
+        "num_pred": 48,
+        "precision": 0.104167,
+        "recall": 0.3125,
+        "f1": 0.15625
+      },
+      "reference/apis-ability-kit/js-apis-app-ability-abilityConstant-sys.md": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 13,
+        "num_gt": 16,
+        "num_pred": 5,
+        "precision": 0.6,
+        "recall": 0.1875,
+        "f1": 0.285714
+      },
+      "reference/apis-arkui/capi-arkui-nativemodule-arkui-customproperty.md": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 2,
+        "num_gt": 5,
+        "num_pred": 3,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "reference/apis-ability-kit/js-apis-bundleManager-shortcutInfo.md": {
+        "tp": 1,
+        "fp": 3,
+        "fn": 15,
+        "num_gt": 16,
+        "num_pred": 4,
+        "precision": 0.25,
+        "recall": 0.0625,
+        "f1": 0.1
+      },
+      "reference/apis-arkui/capi-arkui-nativemodule-arkui-nativenodeapi-1.md": {
+        "tp": 2,
+        "fp": 53,
+        "fn": 14,
+        "num_gt": 16,
+        "num_pred": 55,
+        "precision": 0.036364,
+        "recall": 0.125,
+        "f1": 0.056338
+      },
+      "reference/apis-arkdata/Readme-CN.md": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 16,
+        "num_gt": 16,
+        "num_pred": 0,
         "precision": 0.0,
         "recall": 0.0,
-        "f1": 0.0,
-        "num_gt": 0,
-        "num_pred": 12
+        "f1": 0.0
       }
     }
   },
